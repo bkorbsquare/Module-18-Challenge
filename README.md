@@ -26,7 +26,7 @@ N/A
 
 ## Credits
 
-Special thanks to my partner Laura Aviña for all her support (https://www.linkedin.com/in/laura-avina/). Badges from - https://github.com/badges/shields 
+Special thanks to my partner Laura Aviña for all her support (https://www.linkedin.com/in/laura-avina/). Badges from: https://github.com/badges/shields 
 
 ## License
 
