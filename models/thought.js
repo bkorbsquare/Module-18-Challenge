@@ -1,5 +1,7 @@
+// Description: This file contains the schema for the thought model
 const { Schema, model, Types } = require('mongoose');
 
+// Reaction schema
 const reactionSchema = new Schema (
   {
      reactionId: {
@@ -31,6 +33,7 @@ const reactionSchema = new Schema (
   }
 )
 
+// Thought schema
 const thoughtSchema = new Schema (
   {
       thoughtText: {
@@ -60,10 +63,13 @@ const thoughtSchema = new Schema (
     }
 );
 
+// Get total count of reactions on retrieval
 thoughtSchema.virtual('reactionCount').get(function() {
     return this.reactions.length;
 })
 
+// Create the Thought model using the thoughtSchema
 const Thought = model('Thought', thoughtSchema);
 
+// Export the Thought model
 module.exports = Thought;

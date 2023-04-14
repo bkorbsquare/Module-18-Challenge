@@ -1,3 +1,4 @@
+// This file is used to route the thought routes to the thought controller.
 const router = require('express').Router();
 
 // From controllers\thoughtController.js:
@@ -28,4 +29,5 @@ router.route('/:thoughtId/reactions')
 router.route('/:thoughtId/reactions/:reactionId')
 .delete(deleteReaction);
 
+// Export the router
 module.exports = router;

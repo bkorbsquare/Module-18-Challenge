@@ -22,7 +22,7 @@ Use this project as a reference when building a Social Network API.
 
 ## Deployed Site
 
-N/A
+N/A; Walkthrough - (https://drive.google.com/file/d/1ru6gtGiVQXVxYc9_pBk2xCJejwCs0rKP/view) 
 
 ## Credits
 

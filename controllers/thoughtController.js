@@ -1,5 +1,7 @@
+// Description: Controller for thoughts model to handle CRUD operations
 const { User, Thought } = require("../models");
 
+// Export the controller
 module.exports = {
 
   // Get thoughts
@@ -38,7 +40,6 @@ module.exports = {
       )
       .catch((err) => res.status(500).json(err));
   },
-
 
   // Update thought
   changeThought(req, res) {

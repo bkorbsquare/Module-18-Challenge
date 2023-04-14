@@ -1,12 +1,16 @@
+// Description: Controller for User model to handle CRUD operations
 const { User, Thought } = require("../models");
 
+// Export the controller
 module.exports = {
+
   // Get users
   getAllUsers(req, res) {
     User.find({})
       .then((users) => res.json(users))
       .catch((err) => res.status(500).json(err));
   },
+
  // Get one user
   getOneUser(req, res) {
     User.findOne({ _id: req.params.userId })
@@ -20,6 +24,7 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
 
+  // Create user
   createUser(req, res) {
     User.create(req.body)
       .then((user) => res.json(user))

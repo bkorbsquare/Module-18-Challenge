@@ -1,5 +1,7 @@
+// Description: This file contains the routes for the user model
 const router = require('express').Router();
 
+// From controllers\userController.js:
 const {
     getUser,
     getSingleUser,
@@ -24,4 +26,5 @@ router.route('/:userId/friends/:friendId')
 .post(addFriend)
 .delete(deleteFriend);
 
+// Export the router
 module.exports = router;
